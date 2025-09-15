@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TreeOne FileSharing</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>TreeOne File Sharing</h1>
+    <div id="login-section">
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="file-section" style="display:none;">
+        <button onclick="listFiles()">List Files</button>
+        <div id="files"></div>
+        <br>
+        <input type="text" id="fileToGet" placeholder="Filename to Download">
+        <button onclick="getFile()">Download</button>
+        <br>
+        <input type="text" id="fileToDelete" placeholder="Filename to Delete">
+        <button onclick="deleteFile()">Delete</button>
+        <br><br>
+        <input type="file" id="fileToUpload">
+        <button onclick="uploadFile()">Upload</button>
+        <br><br>
+        <button onclick="logout()">Logout</button>
+
+    </div>
+</body>
+</html>
